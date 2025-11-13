@@ -41,18 +41,11 @@ Have an idea for a new feature?
 
 **Free Tier (100 movies):**
 ```
-https://movie-leaks.vercel.app/manifest.json
+https://movie-leaks.vercel.app
 ```
-
-1. Open **Stremio**
-2. Click the **puzzle icon** (Add-ons)
-3. Click **"Community Add-ons"** at the bottom
-4. Paste the URL above and click **Install**
-5. Browse the **"Movie Leaks"** catalog
-
 **Supporter Tier (movies):**
 
-1. Subscribe on Ko-fi: https://ko-fi.com/zeroq/membership
+1. Subscribe on Ko-fi: https://ko-fi.com/summary/9088a0c3-5c4c-4927-bf0f-3b631c4ac66d
 2. Receive your unique supporter code **instantly via email**
 3. Install the addon (URL above)
 4. Configure it with your supporter code
@@ -69,7 +62,7 @@ Support the project for **$5/month** and get:
 - ✅ **Future features** as they're developed
 - ✅ Help keep the project alive!
 
-**Subscribe here:** https://ko-fi.com/zeroq/membership
+**Subscribe here:** https://ko-fi.com/summary/9088a0c3-5c4c-4927-bf0f-3b631c4ac66d
 
 Codes auto-renew monthly with your subscription and are delivered instantly via email.
 
@@ -145,14 +138,14 @@ Your support helps cover:
 
 - **Stremio Discord**: discord.gg/zNRf6YF
 - **Reddit**: r/StremioAddons, r/Stremio
-- **Ko-fi**: ko-fi.com/zeroq
+- **Ko-fi**: https://ko-fi.com/summary/9088a0c3-5c4c-4927-bf0f-3b631c4ac66d
 
 ---
 
 ## 🔗 Links
 
-- **Install Addon**: https://movie-leaks.vercel.app/manifest.json
-- **Become a Supporter**: https://ko-fi.com/zeroq/membership
+- **Install Addon**: https://movie-leaks.vercel.app
+- **Become a Supporter**: https://ko-fi.com/summary/9088a0c3-5c4c-4927-bf0f-3b631c4ac66d
 - **Free RPDB Key**: https://ratingposterdb.com
 - **Source Subreddit**: r/movieleaks
 
