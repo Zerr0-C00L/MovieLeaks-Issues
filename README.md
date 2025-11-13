@@ -28,14 +28,14 @@ Have an idea for a new feature?
 
 ### 🎬 Features
 
-- **477+ Leaked Movies** - Automatically scraped from r/movieleaks
+- **Leaked Movies** - Automatically scraped from r/movieleaks
 - **Auto-updating Catalog** - New movies added weekly
 - **Multiple Sort Options** - New, Hot, Top, Rising
 - **Rich Metadata** - Movie info, posters, ratings via Cinemeta
 - **RPDB Integration** - Optional custom posters with RT scores (supporters only)
 - **Two-Tier System**:
   - 🆓 **Free Tier**: 100 movies, no signup required
-  - 💎 **Supporter Tier**: All 477+ movies + RPDB support
+  - 💎 **Supporter Tier**: All movies + RPDB support
 
 ### 📦 Installation
 
@@ -50,19 +50,19 @@ https://movie-leaks.vercel.app/manifest.json
 4. Paste the URL above and click **Install**
 5. Browse the **"Movie Leaks"** catalog
 
-**Supporter Tier (477+ movies):**
+**Supporter Tier (movies):**
 
 1. Subscribe on Ko-fi: https://ko-fi.com/zeroq/membership
 2. Receive your unique supporter code **instantly via email**
 3. Install the addon (URL above)
 4. Configure it with your supporter code
-5. Unlock all 477+ movies! 🎉
+5. Unlock all movies! 🎉
 
 ### 💎 Become a Supporter
 
 Support the project for **$5/month** and get:
 
-- ✅ **All 477+ movies** (vs 100 free)
+- ✅ **All movies** (vs 100 free)
 - ✅ **RPDB poster overlays** (bring your own free key from ratingposterdb.com)
 - ✅ **Instant code delivery** via automated email
 - ✅ **Priority support** for issues and requests
@@ -162,11 +162,11 @@ Your support helps cover:
 
 Upcoming features (vote for your favorites in Issues!):
 
-- [ ] More sort/filter options
+- [✅] More sort/filter options
 - [ ] Genre categories
 - [ ] Quality indicators
-- [ ] Release date filtering
-- [ ] Search functionality
+- [✅] Release date filtering
+- [✅] Search functionality
 - [ ] Custom lists
 - [ ] Watchlist integration
 
