@@ -24,28 +24,29 @@ Have an idea for a new feature?
 
 ## 📖 About the Addon
 
-**Movie Leaks** is a Stremio addon that catalogs leaked and upcoming movies from r/movieleaks subreddit, bringing them directly to your Stremio library.
+**Movie Leaks** is a Stremio addon that catalogs HD movie releases from rlsbb.to, bringing them directly to your Stremio library.
 
 ### 🎬 Features
 
-- **Leaked Movies** - Automatically scraped from r/movieleaks
-- **Auto-updating Catalog** - New movies added weekly
-- **Multiple Sort Options** - New, Hot, Top, Rising
+- **HD Movie Releases** - Automatically scraped from rlsbb.to (1080p, 720p, 4K)
+- **IMDB Integration** - Extracts titles, years, and IMDB IDs automatically
+- **Auto-updating Catalog** - New movies added daily
 - **Rich Metadata** - Movie info, posters, ratings via Cinemeta
 - **RPDB Integration** - Optional custom posters with RT scores (supporters only)
 - **Two-Tier System**:
-  - 🆓 **Free Tier**: 100 movies, no signup required
+  - 🆓 **Free Tier**: 70 latest HD releases, no signup required
   - 💎 **Supporter Tier**: All movies + RPDB support
 
 ### 📦 Installation
 
-**Free Tier (100 movies):**
+**Free Tier (70 movies):**
 ```
 https://movie-leaks.vercel.app
 ```
-**Supporter Tier (movies):**
 
-1. Subscribe on Ko-fi: https://ko-fi.com/summary/9088a0c3-5c4c-4927-bf0f-3b631c4ac66d
+**Supporter Tier (all movies):**
+
+1. Subscribe on Ko-fi: https://ko-fi.com/zeroq/membership
 2. Receive your unique supporter code **instantly via email**
 3. Install the addon (URL above)
 4. Configure it with your supporter code
@@ -55,14 +56,14 @@ https://movie-leaks.vercel.app
 
 Support the project for **$5/month** and get:
 
-- ✅ **All movies** (vs 100 free)
+- ✅ **All movies** (vs 70 free)
 - ✅ **RPDB poster overlays** (bring your own free key from ratingposterdb.com)
 - ✅ **Instant code delivery** via automated email
 - ✅ **Priority support** for issues and requests
 - ✅ **Future features** as they're developed
 - ✅ Help keep the project alive!
 
-**Subscribe here:** https://ko-fi.com/summary/9088a0c3-5c4c-4927-bf0f-3b631c4ac66d
+**Subscribe here:** https://ko-fi.com/zeroq/membership
 
 Codes auto-renew monthly with your subscription and are delivered instantly via email.
 
@@ -70,22 +71,23 @@ Codes auto-renew monthly with your subscription and are delivered instantly via 
 
 ## 🛠️ Technical Details
 
-- **Source**: r/movieleaks subreddit (public posts)
+- **Source**: rlsbb.to (HD movie releases)
 - **Metadata**: Cinemeta API (official Stremio)
-- **Updates**: Automated weekly scraping
+- **IMDB IDs**: Extracted from release pages in parallel
+- **Updates**: Automated daily scraping
 - **Hosting**: Vercel (serverless)
 - **Caching**: 5-minute refresh cycle
 - **Code Validation**: 30-day expiry with auto-renewal
 
 ### How It Works
 
-1. Addon scrapes r/movieleaks posts regularly
-2. Extracts IMDb IDs and metadata
-3. Fetches proper movie info from Cinemeta
+1. Addon scrapes rlsbb.to "Recommended movies" widget
+2. Fetches IMDB IDs from each movie's detail page (parallel batches)
+3. Fetches proper movie info from Cinemeta using IMDB IDs
 4. Applies RPDB posters for supporters (optional)
 5. Serves catalog to Stremio
 
-**Disclaimer**: This addon only provides catalog information. Actual streaming links come from the Reddit posts themselves. We don't host any content.
+**Disclaimer**: This addon only provides catalog information. Actual streaming links come from other Stremio addons (Torrentio, MediaFusion, etc.). We don't host any content.
 
 ---
 
@@ -121,16 +123,16 @@ If you discover a security vulnerability, please email directly instead of creat
 Love the addon? Here's how you can help:
 
 - ☕ **Become a Supporter** - $5/month unlocks everything: https://ko-fi.com/zeroq/membership
-- ⭐ **Star this repository** to show your support
+- ⭐ **Star the repository** to show your support
 - 🐛 **Report bugs** to help improve quality
 - 💬 **Share with friends** who use Stremio
 - 📢 **Spread the word** on Reddit, Discord, etc.
 
 Your support helps cover:
 - Vercel hosting costs
-- Reddit API usage
 - Development time
 - Future features and improvements
+- Server maintenance
 
 ---
 
@@ -138,16 +140,16 @@ Your support helps cover:
 
 - **Stremio Discord**: discord.gg/zNRf6YF
 - **Reddit**: r/StremioAddons, r/Stremio
-- **Ko-fi**: https://ko-fi.com/summary/9088a0c3-5c4c-4927-bf0f-3b631c4ac66d
+- **Ko-fi**: https://ko-fi.com/zeroq/membership
 
 ---
 
 ## 🔗 Links
 
 - **Install Addon**: https://movie-leaks.vercel.app
-- **Become a Supporter**: https://ko-fi.com/summary/9088a0c3-5c4c-4927-bf0f-3b631c4ac66d
+- **Become a Supporter**: https://ko-fi.com/zeroq/membership
 - **Free RPDB Key**: https://ratingposterdb.com
-- **Source Subreddit**: r/movieleaks
+- **Source**: rlsbb.to
 
 ---
 
@@ -155,11 +157,11 @@ Your support helps cover:
 
 Upcoming features (vote for your favorites in Issues!):
 
-- [✅] More sort/filter options
+- [ ] More filter options
 - [ ] Genre categories
-- [ ] Quality indicators
-- [✅] Release date filtering
-- [✅] Search functionality
+- [ ] Quality indicators (1080p/720p/4K badges)
+- [ ] Release date filtering
+- [ ] Search functionality
 - [ ] Custom lists
 - [ ] Watchlist integration
 
@@ -170,10 +172,10 @@ Have another idea? Create a Feature Request!
 ## ❓ FAQ
 
 **Q: Is this legal?**  
-A: Yes. We're a search engine/aggregator for public Reddit posts. We don't host any content.
+A: Yes. We're a catalog aggregator for publicly available movie information. We don't host any content or provide streams.
 
 **Q: Why charge for the full catalog?**  
-A: The free tier (100 movies) is generous! Supporters help cover hosting costs, Reddit API usage, and development time. It's optional - enjoy the free version!
+A: The free tier (70 movies) is generous! Supporters help cover hosting costs, development time, and maintenance. It's optional - enjoy the free version!
 
 **Q: Do I need an RPDB key?**  
 A: No, it's completely optional. RPDB adds custom posters with RT scores, but requires a supporter code to use.
@@ -182,19 +184,22 @@ A: No, it's completely optional. RPDB adds custom posters with RT scores, but re
 A: Free at ratingposterdb.com - create an account and generate an API key.
 
 **Q: What if I cancel my Ko-fi subscription?**  
-A: Your code will expire and you'll return to the free tier (100 movies). No hard feelings!
+A: Your code will expire and you'll return to the free tier (70 movies). No hard feelings!
 
 **Q: Can I share my supporter code?**  
 A: Codes are for personal use only. Sharing may result in deactivation.
 
 **Q: How often is the catalog updated?**  
-A: Movies are refreshed every 5 minutes from r/movieleaks.
+A: Movies are refreshed every 5 minutes from rlsbb.to.
 
 **Q: Does this work on all devices?**  
 A: Yes! Works on Stremio Desktop, Web, Android, and iOS.
+
+**Q: Where do streams come from?**  
+A: This is a catalog-only addon. Install streaming addons like Torrentio, MediaFusion, or Comet for actual streams.
 
 ---
 
 **Note**: This repository is for issue tracking only. The source code is in a private repository.
 
-Made with ❤️ for the Stremio community | v1.4.0
+Made with ❤️ for the Stremio community | v2.0.0
